@@ -39,5 +39,11 @@ class RegionServiceProvider extends ServiceProvider
                 __DIR__.'/config/regions.php', 'regions'
             );
         }
+
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                \Vendor\Regions\Console\PublishAndSeedRegions::class,
+            ]);
+        }
     }
 }
