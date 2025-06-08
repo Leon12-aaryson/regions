@@ -1,0 +1,27 @@
+{
+    "name": "vendor/regions",
+    "description": "This package provides an api that helps developers to have access to regional data in form of countries, regions, states, cities, districts and villages",
+    "type": "library",
+    "require": {
+        "illuminate/support": ">=10.0 <13.0",
+        "illuminate/database": ">=10.0 <13.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vendor\\Regions\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vendor\\Regions\\RegionServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Leon12-aaryson",
+            "email": "aaronoluk4deleonardo@gmail.com"
+        }
+    ]
+}
