@@ -11,11 +11,55 @@ This package provides an API and tools for accessing regional data such as count
 
 ## Installation
 
-Require the package in your Laravel project:
+You can install this package in three ways:
+
+### 1. Install via Packagist (Composer)
 
 ```bash
 composer require vendor/regions
 ```
+
+### 2. Install Directly from GitHub
+
+Add the repository to your Laravel project's `composer.json`:
+
+```json
+"repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/Leon12-aaryson/regions"
+    }
+]
+```
+
+Then require the package (replace `main` with your branch if needed):
+
+```bash
+composer require vendor/regions:dev-main
+```
+
+### 3. Use Locally (Development)
+
+Clone or copy this package into a directory (e.g. `packages/vendor/regions`) in your Laravel project.
+
+Add the local path to your Laravel project's `composer.json`:
+
+```json
+"repositories": [
+    {
+        "type": "path",
+        "url": "packages/vendor/regions"
+    }
+]
+```
+
+Then require it:
+
+```bash
+composer require vendor/regions:dev-main
+```
+
+---
 
 ## Usage
 
@@ -78,5 +122,5 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ---
 
-**Author:** Leon12-aaryson  
+**Author:** Leon12-aaryson
 **Email:** aaronoluk4deleonardo@gmail.com
