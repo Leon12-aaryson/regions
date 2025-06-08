@@ -29,6 +29,8 @@ class RegionServiceProvider extends ServiceProvider
         if (file_exists(__DIR__.'/routes/web.php')) {
             $this->loadRoutesFrom(__DIR__.'/routes/web.php');
         }
+
+        $this->loadRoutesFrom(__DIR__.'/routes/api.php');
     }
 
     public function register()
