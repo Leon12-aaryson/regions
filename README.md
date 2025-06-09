@@ -117,6 +117,21 @@ curl http://your-app.test/api/regions/countries
 - `src/database/seeders/` – Seeder files
 - `src/config/regions.php` – (Optional) Config file
 
+## Updating the Package
+
+To update the package and re-run the installer, run:
+
+```bash
+composer update vendor/regions
+php artisan regions:install
+```
+
+Or, if you added the custom script:
+
+```bash
+composer regions-update
+```
+
 ## Requirements
 
 - PHP 8.2 or higher
@@ -138,4 +153,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 **Author:** Leon12-aaryson
 
-**Email:** aaronoluk4deleonardo@gmail.com
+**Email:** <aaronoluk4deleonardo@gmail.com>
