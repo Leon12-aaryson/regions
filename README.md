@@ -1,6 +1,6 @@
 # Regions Laravel Package
 
-This package provides an API and tools for accessing regional data such as countries, regions, states, cities, districts, and villages for Laravel applications.
+This package provides an API and tools for accessing regional data such as countries, states, and cities for Laravel applications.
 
 ## Features
 
@@ -93,6 +93,20 @@ If the package provides a config file, you can publish it with:
 
 ```bash
 php artisan vendor:publish --tag=regions-config
+```
+
+## API Usage
+
+After installing and migrating, you can fetch regional data via HTTP:
+
+- `GET /api/regions/countries` – List all countries
+- `GET /api/regions/states?country_id=1` – List states for a country
+- `GET /api/regions/cities?state_id=1` – List cities for a state
+
+Example (using curl):
+
+```bash
+curl http://your-app.test/api/regions/countries
 ```
 
 ## Directory Structure

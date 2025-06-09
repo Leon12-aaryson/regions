@@ -1,6 +1,6 @@
 {
     "name": "vendor/regions",
-    "description": "This package provides an api that helps developers to have access to regional data in form of countries, regions, states, cities, districts and villages",
+    "description": "This package provides an api that helps developers to have access to regional data in form of countries, states and cities",
     "type": "library",
     "require": {
         "illuminate/support": ">=10.0 <13.0",

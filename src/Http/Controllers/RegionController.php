@@ -31,13 +31,4 @@ class RegionController extends Controller
         }
         return Response::json($query->get());
     }
-
-    public function districts(Request $request)
-    {
-        $query = DB::table('districts');
-        if ($request->has('city_id')) {
-            $query->where('city_id', $request->city_id);
-        }
-        return Response::json($query->get());
-    }
 }
