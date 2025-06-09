@@ -6,5 +6,6 @@ use Vendor\Regions\Http\Controllers\RegionController;
 Route::prefix('regions')->group(function () {
     Route::get('countries', [RegionController::class, 'countries']);
     Route::get('states', [RegionController::class, 'states']);
-    // Add more endpoints as needed
+    Route::get('cities', [RegionController::class, 'cities']);
+    Route::get('districts', [RegionController::class, 'districts']);
 });
