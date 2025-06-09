@@ -25,14 +25,5 @@
             "name": "Leon12-aaryson",
             "email": "aaronoluk4deleonardo@gmail.com"
         }
-    ],
-    "require-dev": {
-        "illuminate/routing": "^12.17"
-    },
-    "scripts": {
-        "regions-update": [
-            "composer update vendor/regions",
-            "php artisan regions:install"
-        ]
-    }
+    ]
 }

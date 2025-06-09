@@ -21,7 +21,7 @@ composer require vendor/regions
 
 ### 2. Install Directly from GitHub
 
-Add the repository to your Laravel project's `composer.json`:
+Add this to your main Laravel project's `composer.json`:
 
 ```json
 "repositories": [
@@ -124,23 +124,6 @@ To update the package and re-run the installer, run:
 ```bash
 composer update vendor/regions
 php artisan regions:install
-```
-
-Or, if you added the custom script to your main Laravel project's `composer.json`:
-
-```json
-"scripts": {
-    "regions-update": [
-        "composer update vendor/regions",
-        "php artisan regions:install"
-    ]
-}
-```
-
-You can now update and install the package in one step:
-
-```bash
-composer regions-update
 ```
 
 ## Requirements
