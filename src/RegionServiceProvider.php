@@ -45,6 +45,7 @@ class RegionServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->commands([
                 \Vendor\Regions\Console\PublishAndSeedRegions::class,
+                \Vendor\Regions\Console\ShowComposerScript::class, // Add this line
             ]);
         }
     }

@@ -61,11 +61,36 @@ composer require vendor/regions:dev-main
 
 ---
 
+## One-Step Update & Install (Recommended)
+
+After installing the package, run:
+
+```bash
+php artisan regions:show-script
+```
+
+This will display the JSON snippet to add to your main Laravel project's `composer.json` under "scripts":
+
+```json
+"scripts": {
+    "regions-update": [
+        "composer update vendor/regions",
+        "php artisan regions:install"
+    ]
+}
+```
+
+Now you can update and install the package in one step:
+
+```bash
+composer regions-update
+```
+
+---
+
 ## Usage
 
-### 1. Publish and Run Migrations & Seeders
-
-Run the following Artisan command to publish migrations and seeders, run migrations, and seed the database:
+After installation, run:
 
 ```bash
 php artisan regions:install
