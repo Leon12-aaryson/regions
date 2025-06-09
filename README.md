@@ -126,7 +126,18 @@ composer update vendor/regions
 php artisan regions:install
 ```
 
-Or, if you added the custom script:
+Or, if you added the custom script to your main Laravel project's `composer.json`:
+
+```json
+"scripts": {
+    "regions-update": [
+        "composer update vendor/regions",
+        "php artisan regions:install"
+    ]
+}
+```
+
+You can now update and install the package in one step:
 
 ```bash
 composer regions-update
